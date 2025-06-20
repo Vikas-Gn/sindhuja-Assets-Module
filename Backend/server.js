@@ -187,5 +187,5 @@ app.get('/api/stats', async (req, res) => {
 
 // Start server
 app.listen(port, () => {
-    console.log(`Server running at http://3.108.219.2:${port}`);
+    console.log(`Server running at http://13.232.22.194:${port}`);
 });
