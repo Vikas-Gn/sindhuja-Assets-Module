@@ -5,7 +5,7 @@ services:
     build: ./Backend
     container_name: backend-assets
     ports:
-      - "3030:3030"
+      - "3203:3203"
     depends_on:
       - postgres
     environment:
@@ -19,7 +19,7 @@ services:
     build: ./Employee-Assets
     container_name: employee-assets
     ports:
-      - "8030:80"
+      - "8006:80"
     depends_on:
       - backend
 
@@ -27,7 +27,7 @@ services:
     build: ./HR-Assets
     container_name: hr-assets
     ports:
-      - "8032:80"
+      - "8007:80"
     depends_on:
       - backend
 
@@ -35,7 +35,7 @@ services:
     image: postgres:13
     container_name: postgres-assets
     ports:
-      - "5002:5432"
+      - "5203:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin123
